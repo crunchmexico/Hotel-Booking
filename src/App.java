@@ -11,7 +11,7 @@ public class App {
         Reserva reserva4 = new Reserva(987, "2025-09-09", "2025-09-15", "2025-01-31", "Salatiel", "Ramirez", "Doble", 9, 15000, "Tarjeta Credito");
 
         // Crear un nuevo huesped
-        Huesped huesped1 = new Huesped("Heydi", "May", 37, "1988-08-08", "Mexicana", "Reg. 92, lt. 31, Ma. 24", "Cancun", "Q.Roo", "Mexico", "123MAMH", "9981605636", "heydi@hotmail.com");
+        //Huesped huesped1 = new Huesped("Heydi", "May", 37, "1988-08-08", "Mexicana", "Reg. 92, lt. 31, Ma. 24", "Cancun", "Q.Roo", "Mexico", "123MAMH", "9981605636", "heydi@hotmail.com");
 
         // Agregar la reserva al gestor
         gestorReservas.agregarReserva(reserva1);
@@ -20,20 +20,9 @@ public class App {
 
         reserva2.setPrecioTotal(25000.0);
     
-        
         // Mostrar la información de la reserva
         gestorReservas.mostrarReservas();
         gestorReservas.agregarReserva(reserva4);
-        /*System.out.println("Reserva Agregada: " + reserva1.getNumeroReserva());
-        System.out.println("=====================================");
-        System.out.println("Nombre Huesped: " + reserva1.getNombreHuesped() + " " + reserva1.getApellidoHuesped());
-        System.out.println("=====================================");
-        System.out.println("Numero de noches: " + reserva1.getNumeroNoches());
-        System.out.println("=====================================");
-        System.out.println("Precio Total: " + reserva1.getPrecioTotal());
-        System.out.println("=====================================");
-        System.out.println("Forma de Pago: " + reserva1.getFormaDePago());
-        System.out.println("=====================================");*/
         
         // Crear una nueva habitación
         Habitacion habitacion1 = new Habitacion(8063, "King", true, false, true);
