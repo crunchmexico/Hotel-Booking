@@ -21,7 +21,7 @@ public class App {
         reserva2.setPrecioTotal(25000.0);
     
         // Mostrar la información de la reserva
-        gestorReservas.mostrarReservas();
+        //gestorReservas.mostrarReservas();
         gestorReservas.agregarReserva(reserva4);
         
         // Crear una nueva habitación
@@ -32,6 +32,9 @@ public class App {
         System.out.println("Huesped de la reserva: " + reserva4.getNumeroReserva() + ": " + reserva4.getNombreHuesped() + " " + reserva4.getApellidoHuesped());
         System.out.println("=====================================");
         System.out.println("Numero de noches de "+ reserva4.getNombreHuesped() + ": " + reserva4.getNumeroNoches());
+        //gestorReservas.mostrarReservas();
+
+        gestorReservas.eliminarReserva(123);
         gestorReservas.mostrarReservas();
     }
 }

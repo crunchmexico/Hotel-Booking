@@ -22,7 +22,9 @@ public class GestorReservas {
     public void eliminarReserva(int numeroReserva) {
         for (int i = 0; i < listaDeReservas.size(); i++) {
             if (listaDeReservas.get(i).getNumeroReserva() == numeroReserva) {
-                
+                listaDeReservas.remove(i);
+                System.out.println("Reserva " + numeroReserva + " eliminada.");
+                return;
             }
         }
     }
