@@ -1,9 +1,7 @@
-
 public class App {
     public static void main(String[] args) throws Exception {
         // Crear una instancia de GestorReservas
         GestorReservas gestorReservas = new GestorReservas();
-
         // Crear una nueva reserva
         Reserva reserva1 = new Reserva(123, "2025-05-03", "2025-05-06", "25/12/24", "Ivan", "Ramirez", "Doble", 3, 3000, "Tarjeta de Credito");
         Reserva reserva2 = new Reserva(321, "2025-05-06", "2025-05-11", "25/01/01", "Eduardo", "Ramirez", "Sencilla", 5, 0, "Transferencia Bancaria");
