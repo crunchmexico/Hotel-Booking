@@ -7,10 +7,10 @@ public class Hotel {
 
     public void agregarReserva(Reserva reserva) {
         this.reservas.add(reserva);
-        this.gestoHuespedes.agregarHueped(reserva.getHuesped()); // Agregamos el huesped a la lista de huespedes
+        this.gestorHuespedes.agregarHueped(reserva.getHuesped()); // Agregamos el huesped a la lista de huespedes
     }
 
     public List<Huesped> obtenerListaHuespedesHotel() {
-        return this.gestorHuespedes.obtenerTodosLosHuespedes();
+        return this.gestorHuespedes.obtenerTodosLosHuespedes();// 
     }
 }

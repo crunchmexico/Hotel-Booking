@@ -1,0 +1,15 @@
+# Listado de archivos y carpetas ignoradas
+*.class
+*.jar
+*.war
+*.ear
+
+# Archivos IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Archivos VsCode
+.vscode/
