@@ -13,3 +13,6 @@ out/
 
 # Archivos VsCode
 .vscode/
+
+# Archivos temporales de VS Code
+tempCodeRunnerFile.java
