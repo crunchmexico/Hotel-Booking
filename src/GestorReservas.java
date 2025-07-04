@@ -28,4 +28,14 @@ public class GestorReservas {
             }
         }
     }
+
+    // Metodo para buscar una reserva por el nombre del huesped
+    public Reserva buscarReservaPorNombreHuesped(String nombreHuesped) {
+        for (Reserva reserva : listaDeReservas) {
+            if (reserva.getNombreHuesped().equalsIgnoreCase(nombreHuesped)) {
+                return reserva;
+            }
+        }
+        return null;
+    }
 }

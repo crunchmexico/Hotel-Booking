@@ -34,5 +34,14 @@ public class App {
 
         gestorReservas.eliminarReserva(123);
         gestorReservas.mostrarReservas();
+
+        // Buscar una reserva por el nombre del huesped
+        GestorReservas gestor = new GestorReservas();
+        Reserva resultado = gestor.buscarReservaPorNombreHuesped("Ivan");
+        if (resultado != null) {
+            System.out.println("Huesped encontrado: " + resultado.getNombreHuesped());
+        } else {
+            System.out.println("Huesped no encontrado.");
+        }
     }
 }
