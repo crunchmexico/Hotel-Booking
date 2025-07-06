@@ -33,9 +33,9 @@ public class GestorReservas {
     public Reserva buscarReservaPorNombreHuesped(String nombreHuesped) {
         for (Reserva reserva : listaDeReservas) {
             if (reserva.getNombreHuesped().equalsIgnoreCase(nombreHuesped)) {
-                return reserva;
+                return reserva; // Devuelve la primera reserva que coincida
             }
         }
-        return null;
+        return null; // Devuelve null si no se encuentra ninguna reserva
     }
 }

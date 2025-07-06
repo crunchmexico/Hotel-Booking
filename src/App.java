@@ -36,10 +36,16 @@ public class App {
         gestorReservas.mostrarReservas();
 
         // Buscar una reserva por el nombre del huesped
-        GestorReservas gestor = new GestorReservas();
-        Reserva resultado = gestor.buscarReservaPorNombreHuesped("Ivan");
+        Reserva resultado = gestorReservas.buscarReservaPorNombreHuesped("Eduardo");
         if (resultado != null) {
-            System.out.println("Huesped encontrado: " + resultado.getNombreHuesped());
+            System.out.println("Huesped " + resultado.getNombreHuesped() + " encontrado.");
+        } else {
+            System.out.println("Huesped no encontrado.");
+        }
+
+        Reserva resultado2 = gestorReservas.buscarReservaPorNombreHuesped("Heydi");
+        if (resultado2 != null) {
+            System.out.println("Huesped " + resultado2.getNombreHuesped() + " encontrado.");
         } else {
             System.out.println("Huesped no encontrado.");
         }
