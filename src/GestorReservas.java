@@ -38,4 +38,16 @@ public class GestorReservas {
         }
         return null; // Devuelve null si no se encuentra ninguna reserva
     }
+
+    public void mostrarHuespedesOrdenados() {
+        List<String> nombresHuespedes = new ArrayList<>();
+        for (Reserva reserva : listaDeReservas) {
+            nombresHuespedes.add(reserva.getNombreHuesped() + " " + reserva.getApellidoHuesped());
+        }
+        nombresHuespedes.sort(String::compareToIgnoreCase);
+        System.out.println("Lista de huéspedes ordenados alfabéticamente:");
+        for (String nombre : nombresHuespedes) {
+            System.out.println(nombre);
+        }
+    }
 }

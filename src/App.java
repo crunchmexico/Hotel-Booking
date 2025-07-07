@@ -49,5 +49,8 @@ public class App {
         } else {
             System.out.println("Huesped no encontrado.");
         }
+
+        // Mostrar huéspedes ordenados alfabéticamente
+        gestorReservas.mostrarHuespedesOrdenados();
     }
 }
